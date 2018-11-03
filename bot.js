@@ -325,7 +325,7 @@ client.on('message', message => {
         .addField('resume', 'تكملة الاغنية')
         .addField('queue', 'اظهار قائمة التشغيل')
         .addField('np', 'اظهار الاغنية اللي انت مشغلها حاليا')
-        .setFooter('(1help all) لاظهار الاوامر العامة')
+        .setFooter('(6help all) لاظهار الاوامر العامة')
       message.channel.send(helpEmbed);
     }
 });
