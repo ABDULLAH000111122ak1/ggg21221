@@ -106,7 +106,7 @@ client.on('message', async msg => {
         
         const permissions = voiceChannel.permissionsFor(msg.client.user);
         
-        if (!permissions.has('CONNECT')) {
+        if (!permissions.has('')) {
 
 			return msg.channel.send("ليست لدي صلاحيات للدخول الى الروم");
         }
@@ -313,10 +313,10 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === 'help') {
+    if (message.content === '1help') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
-        .setDescription('**برفكس البوت (!)**')
+        .setDescription('**(برفكس البوت (1 **')
         .addField('play', 'لتشغيل اغنية')
         .addField('join', 'دخول رومك الصوتي')
         .addField('disconnect', 'الخروج من رومك الصوتي')
@@ -325,7 +325,7 @@ client.on('message', message => {
         .addField('resume', 'تكملة الاغنية')
         .addField('queue', 'اظهار قائمة التشغيل')
         .addField('np', 'اظهار الاغنية اللي انت مشغلها حاليا')
-        .setFooter('(general_commands) لاظهار الاوامر العامة')
+        .setFooter('(1help all) لاظهار الاوامر العامة')
       message.channel.send(helpEmbed);
     }
 });
@@ -337,7 +337,7 @@ client.on('message', message => {
         .addField('avatar', "افاتار الشخص المطلوب")
         .addField('gif', 'البحث عن جيف انت تطلبه')
         .addField('ping', 'معرفة ping البوت')
-        .setFooter('المزيد قريبا ان شاء الله!')
+        .setFooter('By .Abdullah bin Fahd#7291')
       message.channel.send(helpEmbed);
     }
 });
